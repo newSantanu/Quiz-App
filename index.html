@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz-App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="screen active" id="start-screen">
+            <h1>!Quiz Time!</h1>
+            <p>See how well you know Java with these questions!</p>
+            <button id="start-btn">Strat Quiz</button>
+        </div>
+        <div class="screen" id="quiz-screen">
+            <div id="quiz-header">
+                <h2 id="question-text"> Question goes here</h2>
+                <div id="quiz-info">
+                    <p>
+                        Question <span id="curr-ques">1</span> of <span id="total-ques">5</span>
+                    </p>
+                    <p>Score: <span id="score">0</span>
+                    </p>
+                </div>
+            </div>
+            <div id="ans-container" class="ans-container">
+                <!-- ans will inserted -->
+            </div>
+            <div class="progress-bar">
+                    <div id="progress" class="progress"></div>
+            </div>
+        </div>
+        <div id="result-screen" class="screen">
+            <h1>Quiz-Result</h1>
+            <div class="result-info">
+                <p>You scored <span id="res-score">0</span> out of <span id="totalscore">5</span></p>
+                <div id="message">Good Job</div>
+
+            </div>
+            
+            <button id="restart-btn">Resatart</button>
+        </div>
+    </div>
+
+   <script src="app.js"></script> 
+</body>
+</html>
